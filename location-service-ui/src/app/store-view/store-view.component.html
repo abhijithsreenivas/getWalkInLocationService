@@ -1,0 +1,16 @@
+<div style="text-align: center"> 
+  <h2> {{store.storename}} </h2>
+  
+  <br>
+  <br>
+  <h4>Customers NearBy</h4>
+  <div>
+    <div *ngFor="let customer of store.customers">
+      <span>{{customer}}</span>
+    </div>
+  </div>
+  
+  <label>Please Submit Your Promotional Message Here</label>
+  <textarea cols="80" [(ngModel)]="currentMsg"></textarea>
+  <button type="submit" (click)="onSubmit($event)">Send</button>
+  </div>

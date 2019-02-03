@@ -1,0 +1,17 @@
+<div style="text-align: center"> 
+<h2>Hi {{customer.num}} </h2>
+
+<br>
+<br>
+<h4>Your Message Box are Below</h4>
+<div class="messageBox">
+<div *ngFor="let msg of customer.messages">
+
+    <span>{{msg}}</span>
+<hr/>
+</div>
+</div>
+
+<div class="bottom"> You have configured Maximum {{customer.configuredMsgs}} messages. </div>
+
+</div>
